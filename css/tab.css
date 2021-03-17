@@ -1,0 +1,605 @@
+@media screen and (max-width: 1439px) and (min-width: 960px) {
+  /* 공통스타일 */
+  :root {
+    /* font-size */
+    --font-size-title: 45px;
+    --font-size-large: 35px;
+    --font-size-mid: 28px;
+    --font-size-regular: 20px;
+    --font-size-small: 18px;
+    --font-size-micro: 16px;
+  }
+
+  h1 {
+    font-size: var(--font-size-title);
+    padding: 8px 0;
+  }
+
+  h2 {
+    font-size: var(--font-size-large);
+    padding: 4px 0;
+  }
+
+  h3 {
+    font-size: var(--font-size-mid);
+    padding: 4px 0;
+  }
+
+  p {
+    font-size: var(--font-size-micro);
+  }
+
+  /* 공통영역 */
+  #wrap {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .sec__container {
+    /*        width: 1200px;*/
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  /* header */
+  header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    transition: all 300ms ease-in;
+  }
+
+  .header__logo {
+    width: 176px;
+    margin: 0 auto;
+  }
+
+  .header__logo > a > img {
+    width: 100%;
+  }
+
+  .header__toggle {
+    position: absolute;
+    right: 20px;
+    width: 60px;
+    cursor: pointer;
+  }
+
+  .header__toggle > img {
+    width: 100%;
+  }
+
+  /*menu slide*/
+  .menu-slide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 0;
+    height: 100vh;
+    visibility: hidden;
+    overflow-y: scroll;
+    background-color: var(--color-mid-white);
+  }
+
+  .slide-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    padding: 50px;
+  }
+
+  .menu__logo {
+    width: 176px;
+  }
+
+  .menu__logo > button > img {
+    width: 100%;
+  }
+
+  .menu__close {
+    width: 50px;
+  }
+
+  .menu__close > button > img {
+    width: 100%;
+  }
+
+  .menu-wrap {
+    width: 100%;
+  }
+
+  .menu__item {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .menu__item:nth-child(1) {
+    margin-top: 50px;
+  }
+
+  .menu__item > a {
+    font-weight: var(--font-weight-black);
+    font-size: var(--font-size-large);
+    color: var(--color-green);
+  }
+
+  .menu__item > a:hover {
+    color: var(--color-black);
+    transition: all 300ms ease-in;
+  }
+
+  /* section1 : main */
+  #main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .main__text-box {
+    position: absolute;
+    top: 50%;
+    margin-top: -130px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: var(--color-mid-white);
+  }
+
+  @keyframes main-title-moving {
+    from {
+      transform: translateX(-100px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes main-sub-moving {
+    from {
+      transform: translateX(100px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  .main__title {
+    transform: translateX(-100px);
+    opacity: 0;
+    animation: main-title-moving 1000ms ease-in forwards;
+    user-select: none;
+  }
+
+  .main__sub {
+    transform: translateX(100px);
+    opacity: 0;
+    animation: main-sub-moving 1000ms 1000ms ease-in forwards;
+    user-select: none;
+  }
+
+  .main__scroll-icon {
+    position: absolute;
+    /*        bottom: 90px;*/
+    bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .scroll__name {
+    margin-bottom: 10px;
+    color: var(--color-mid-white);
+    font-weight: var(--font-weight-bold);
+    user-select: none;
+  }
+
+  @keyframes moving-scroll {
+    0% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(20px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .scroll__img {
+    animation: moving-scroll 2000ms ease-in-out forwards infinite;
+  }
+
+  .video__dark {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #00000050;
+  }
+
+  .main__video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  /* intros */
+  #intros {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 80px 0;
+    /*        margin: 150px 0;*/
+  }
+
+  .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 30px 0;
+    /*        margin: 50px 0;*/
+    /*        background-color: lightgrey;*/
+  }
+
+  .intro__img {
+    /*        margin: 0 30px;*/
+    margin: 0 10px;
+  }
+
+  .intro--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .intro__text-box {
+    width: 100%;
+    height: auto;
+    /*        background-color: lightgoldenrodyellow;*/
+  }
+
+  .intro__title {
+    margin-bottom: 30px;
+  }
+
+  .intro__desc {
+    /*        line-height: 35px;*/
+    line-height: 25px;
+  }
+
+  .intro__text--reverse {
+    text-align: end;
+  }
+
+  .intro__view-more {
+    margin-top: 50px;
+  }
+
+  .intro__bg-line {
+    position: absolute;
+  }
+
+  .mobile__intro {
+    display: none;
+  }
+
+  /* section3 : 사회공헌활동 */
+  #society {
+    width: 100%;
+    height: 100%;
+    margin: 150px 0;
+  }
+
+  .society__title-wrap {
+    padding-top: 100px;
+    user-select: none;
+  }
+
+  .society__title-desc {
+    margin-top: 20px;
+    line-height: 40px;
+    /*        line-height: 55px;*/
+  }
+
+  .society__top,
+  .society__bottom {
+    display: flex;
+    margin: 70px auto;
+    /*        margin: 100px auto;*/
+  }
+
+  .society__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    /*        background-color: sandybrown;*/
+  }
+
+  .society__icon {
+    width: 190px;
+    height: 190px;
+    margin-bottom: 20px;
+  }
+
+  .society__text-box {
+    color: var(--color-mid-white);
+  }
+
+  .society__num {
+    font-weight: var(--font-weight-bold);
+    text-shadow: -1px 0 #3cb14a, 0 1px #3cb14a, 1px 0 #3cb14a, 0 -1px #3cb14a;
+    color: var(--color-black);
+  }
+
+  .society__title {
+    transition: all 300ms ease-in;
+  }
+
+  .society__desc {
+    width: 100%;
+    height: 150px;
+    /*        height: 200px;*/
+    margin-top: 20px;
+    line-height: 30px;
+    /*        line-height: 45px;*/
+    /*        background-color: lightgray;*/
+  }
+
+  .society__btn {
+    padding-bottom: 50px;
+  }
+
+  /* 사회공헌활동 custom cursor style */
+  .cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--color-green);
+    pointer-events: none;
+    mix-blend-mode: difference;
+    z-index: 99;
+    transition: transform 300ms;
+  }
+
+  /* section4: BGF소식 */
+  #news {
+    width: 100%;
+    height: 100%;
+    /*        margin: 150px 0;*/
+    margin: 80px 0;
+  }
+
+  .news__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news__title-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*        width: 477px;*/
+    width: 100%;
+    height: 450px;
+    /*        background-color: lightgray;*/
+  }
+
+  .news__big-title {
+    margin-bottom: 30px;
+    color: var(--color-green);
+  }
+
+  .news__desc {
+    line-height: 25px;
+    /*        line-height: 35px;*/
+  }
+
+  .news__view-more {
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+
+  .news__left,
+  .news__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*        width: 50%;*/
+    width: 45%;
+    height: 100%;
+  }
+
+  .news__left {
+    margin-right: 5%;
+  }
+
+  .news__right {
+    margin-top: 90px;
+    /*        background-color: plum;*/
+  }
+
+  .news__item {
+    position: relative;
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  .news__item:hover .news__title-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*        width: 477px;*/
+    width: 100%;
+    height: 100%;
+    /*        height: 450px;*/
+    background-color: var(--color-green);
+    cursor: pointer;
+  }
+
+  .news__item:hover .news__title {
+    display: block;
+  }
+
+  .news__img {
+    width: 100%;
+  }
+
+  .news__img > img {
+    width: 100%;
+  }
+
+  .news__title {
+    display: none;
+    position: absolute;
+    top: 40%;
+    /*        width: 477px;*/
+    width: 100%;
+    height: 450px;
+    font-size: var(--font-size-regular);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    color: var(--color-mid-white);
+    user-select: none;
+  }
+
+  .swiper-container.news-swiper-container {
+    display: none;
+  }
+
+  /* section5: 채용정보 */
+  #recruit {
+    width: 100%;
+    height: 800px;
+    /*        margin: 150px 0;*/
+    margin: 100px 0;
+    /* background-color: var(--color-green); */
+  }
+
+  .recuit__title {
+    /*        padding-left: 360px;*/
+    padding-left: 5%;
+    /*        transform: translateY(80px);*/
+    transform: translateY(65px);
+    color: var(--color-green);
+  }
+
+  .recruit__img {
+    width: 100%;
+  }
+
+  .mobile-recruit__img {
+    width: 100%;
+  }
+
+  .recruit__text-box {
+    /*        padding-right: 360px;*/
+    padding-right: 5%;
+    transform: translateY(-200px);
+    text-align: end;
+    color: var(--color-mid-white);
+  }
+
+  .recruit__desc {
+    margin-bottom: 20px;
+    line-height: 25px;
+    /*        line-height: 35px;*/
+  }
+
+  .recruit__view-more {
+    justify-content: flex-end;
+  }
+
+  .recruit__view-more > .view-more__btn {
+    width: 250px;
+  }
+
+  /*footer*/
+  footer {
+    width: 100%;
+    height: 100%;
+    margin-top: 200px;
+    /* background-color: var(--color-mid-white); */
+  }
+
+  .footer__icons {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+    /* height: 150px; */
+    /*    background-color: lightgoldenrodyellow;*/
+  }
+
+  .footer__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95px;
+    height: 95px;
+    margin-right: 80px;
+    cursor: pointer;
+    /*    background-color: lavender;*/
+  }
+
+  .footer__icon > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer__icon__name {
+    font-size: var(--font-size-micro);
+    font-weight: var(--font-weight-bold);
+  }
+
+  .footer__bottom {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    /*    background-color: lightgray;*/
+  }
+
+  .footer__bottom p {
+    font-size: var(--font-size-micro);
+  }
+
+  .footer__individual,
+  .footer__management {
+    display: flex;
+    margin-bottom: 10px;
+    /*        margin-bottom: 20px;*/
+  }
+
+  .footer__individual > p,
+  .footer__management > p {
+    margin-right: 20px;
+  }
+
+  .footer__bold {
+    font-weight: var(--font-weight-bold);
+  }
+}
+
+/*end*/

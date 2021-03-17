@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>BGF리테일</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/pc.css" />
+    <link rel="stylesheet" href="css/tab.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="swiper/swiper.css" />
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery.transit.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="swiper/swiper.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!--header-->
+      <header>
+        <div class="header__logo">
+          <a href="#"
+            ><img src="img/header_logo.png" alt="header BGF logo"
+          /></a>
+        </div>
+        <div class="header__toggle">
+          <img src="img/pc_toggle.png" alt="menu toggle btn" />
+        </div>
+      </header>
+
+      <!--menu slide-->
+      <div class="menu-slide">
+        <ul class="slide-btn">
+          <li class="menu__logo">
+            <button>
+              <img
+                src="img/header_logo.png"
+                alt="header logo inside menu slide"
+              />
+            </button>
+          </li>
+          <li class="menu__close">
+            <button>
+              <img src="img/menu_close-btn.png" alt="menu close btn" />
+            </button>
+          </li>
+        </ul>
+        <ul class="menu-wrap">
+          <li class="menu__item"><a href="#">기업정보</a></li>
+          <li class="menu__item"><a href="#">상생경영</a></li>
+          <li class="menu__item"><a href="#">홍보센터</a></li>
+          <li class="menu__item"><a href="#">사회공헌</a></li>
+          <li class="menu__item"><a href="#">채용안내</a></li>
+          <li class="menu__item">
+            <a href="#">투자정보/창업안내/공개입찰</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--section1 : main-->
+      <section id="main">
+        <!-- video -->
+        <div class="video__dark"></div>
+        <video
+          src="video/bgf_30s_1080p-modified.mp4"
+          class="main__video"
+          autoplay
+          muted
+          loop
+        ></video>
+
+        <!-- text -->
+        <div class="main__text-box">
+          <h1 class="main__title">BE GOOD FRIENDS</h1>
+          <h3 class="main__sub">#당신 곁에 좋은 친구 BGF</h3>
+        </div>
+
+        <!-- scroll icon -->
+        <div class="main__scroll-icon">
+          <p class="scroll__name">SCROLL DOWN</p>
+          <div class="scroll__img">
+            <img src="img/scroll-down.png" alt="scroll down arrow icon" />
+          </div>
+        </div>
+      </section>
+
+      <!-- section2 : 회사소개 -->
+      <section id="intros">
+        <div class="sec__container">
+          <!-- section title -->
+          <div
+            class="sec__title-wrap"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
+          >
+            <h1 class="sec__title">BGF RETAIL?</h1>
+          </div>
+          <!-- intro 첫번째 -->
+          <div
+            class="intro"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
+          >
+            <div class="intro__img">
+              <img src="img/sec2-1.png" alt="경영이념" />
+            </div>
+            <div class="intro__text-box">
+              <h2 class="intro__title">경영이념</h2>
+              <p class="intro__desc">
+                언제 어디서나 최상의 상품과 서비스를 제공하여<br />고객가치를
+                실현하고 사회발전에 공헌하는 기업으로<br />성장하는 것입니다.
+              </p>
+            </div>
+          </div>
+          <!-- intro 두번째 -->
+          <div
+            class="intro intro--reverse"
+            data-aos="fade-left"
+            data-aos-offset="500"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
+          >
+            <div class="intro__img">
+              <img src="img/sec2-2.png" alt="대외수상" />
+            </div>
+            <div class="intro__text-box intro__text--reverse">
+              <h2 class="intro__title">대외수상</h2>
+              <p class="intro__desc">
+                BGF리테일의 운영력과 시스템은 여러 기관을 통해<br />인정받고
+                있습니다. 브랜드 가치 향상을 위해 고객 니즈에 <br />맞는
+                상품개발, 지역사회에 밀착된 서비스를 제공합니다.
+              </p>
+            </div>
+          </div>
+          <!-- intro 세번째 -->
+          <div
+            class="intro"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
+          >
+            <div class="intro__img">
+              <img src="img/sec2-3.png" alt="인삿말" />
+            </div>
+            <div class="intro__text-box">
+              <h2 class="intro__title">인삿말</h2>
+              <p class="intro__desc">
+                "BGF의 새로운 도전!<br />
+                편리한 생활을 창조하는 기업으로 거듭나겠습니다."
+              </p>
+            </div>
+          </div>
+
+          <!--mobile ver swiper-->
+          <div class="mobile__intro">
+            <div class="swiper-container intro-swiper-container">
+              <div class="swiper-wrapper intro-swiper-wrapper">
+                <!--slide 첫번째-->
+                <div class="swiper-slide intro-swiper-slide">
+                  <div class="mo-intro__img">
+                    <img src="img/sec2-1.png" alt="경영이념" />
+                  </div>
+                  <div class="mo-intro__text-box">
+                    <h2 class="mo-intro__title">경영이념</h2>
+                    <p class="mo-intro__desc">
+                      언제 어디서나 최상의 상품과 서비스를 제공하여<br />고객가치를
+                      실현하고 사회발전에 공헌하는 기업으로<br />성장하는
+                      것입니다.
+                    </p>
+                  </div>
+                </div>
+                <!--slide 두번째-->
+                <div class="swiper-slide intro-swiper-slide">
+                  <div class="mo-intro__img">
+                    <img src="img/sec2-2.png" alt="대외수상" />
+                  </div>
+                  <div class="mo-intro__text-box intro__text--reverse">
+                    <h2 class="mo-intro__title">대외수상</h2>
+                    <p class="mo-intro__desc">
+                      BGF리테일의 운영력과 시스템은 여러 기관을 통해<br />인정받고
+                      있습니다. 브랜드 가치 향상을 위해 고객 니즈에 <br />맞는
+                      상품개발, 지역사회에 밀착된 서비스를 제공합니다.
+                    </p>
+                  </div>
+                </div>
+                <!--slide 세번째-->
+                <div class="swiper-slide intro-swiper-slide">
+                  <div class="mo-intro__img">
+                    <img src="img/sec2-3.png" alt="인삿말" />
+                  </div>
+                  <div class="mo-intro__text-box">
+                    <h2 class="mo-intro__title">인삿말</h2>
+                    <p class="mo-intro__desc">
+                      "BGF의 새로운 도전!<br />
+                      편리한 생활을 창조하는 기업으로 거듭나겠습니다."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Add Arrows -->
+              <!--
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+-->
+            </div>
+
+            <!--mobile custom cursor-->
+            <div class="intro__cursor">
+              <h3>&lt;&nbsp;&nbsp;&nbsp;&gt;</h3>
+            </div>
+          </div>
+
+          <!-- 더보기 버튼 -->
+          <div class="view-more intro__view-more">
+            <button class="view-more__btn">
+              <span class="view-more__name">BGF리테일 더 알아보기</span>
+              <img src="img/green arrow.png" alt="green right arrow" />
+              <div class="view-more__value"></div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- section3 : 사회공헌활동 -->
+      <section id="society">
+        <div class="sec__container">
+          <!-- section title -->
+          <div class="sec__title-wrap society__title-wrap">
+            <h1
+              class="sec__title"
+              data-aos="fade-right"
+              data-aos-offset="400"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="1000"
+              data-aos-delay="1000"
+            >
+              <span class="title__white"
+                >사회경제적 나눔 가치를<br />만들어가는 기업,</span
+              >BGF리테일
+            </h1>
+            <h3
+              class="sec__desc society__title-desc"
+              class="sec__title"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="1200"
+              data-aos-delay="1000"
+            >
+              <span class="title__white"
+                >BGF리테일을 구심점으로 BGF전사가 합심해 일상의 가까운 곳에서<br />
+                함께 나누는 좋은 친구 같은 기업이 되기 위해
+                노력하고있습니다.</span
+              >
+            </h3>
+          </div>
+
+          <div class="society__top">
+            <!-- icon 첫번째 -->
+            <div
+              class="society__item"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="500"
+              data-aos-delay="1500"
+            >
+              <div class="society__icon">
+                <img
+                  src="img/sec3-share_icon_white.png"
+                  alt="share icon white"
+                />
+              </div>
+              <div class="society__text-box">
+                <h1 class="society__num">01</h1>
+                <h2 class="society__title">공유</h2>
+                <p class="society__desc">
+                  재난 예방 / 구호지원 활동 'BGF브릿지'<br />'사랑의 동전 모으기
+                  캠페인'<br />촘촘한 민-경 협력 아동안전망 구축
+                </p>
+              </div>
+            </div>
+
+            <!-- icon 두번째 -->
+            <div
+              class="society__item"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="500"
+              data-aos-delay="1500"
+            >
+              <div class="society__icon">
+                <img
+                  src="img/sec3-together_icon_white.png"
+                  alt="together icon white"
+                />
+              </div>
+              <div class="society__text-box">
+                <h1 class="society__num">02</h1>
+                <h2 class="society__title">합동</h2>
+                <p class="society__desc">
+                  발달장애인의 일자리 지원 ‘CU투게더’<br />
+                  사회경제적 취약계층 자립지원 ‘CU새싹가게’
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="society__bottom">
+            <!-- icon 세번째 -->
+            <div
+              class="society__item"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="1500"
+            >
+              <div class="society__icon">
+                <img src="img/sec3-give_icon_white.png" alt="give icon white" />
+              </div>
+              <div class="society__text-box">
+                <h1 class="society__num">03</h1>
+                <h2 class="society__title">나눔</h2>
+                <p class="society__desc">
+                  임직원/ CU 가맹점주 ‘사랑의 물품 나누기’<br />
+                  임직원 급여 나눔 ‘사랑의 소리 기금’
+                </p>
+              </div>
+            </div>
+
+            <!-- icon 네번째 -->
+            <div
+              class="society__item"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="1500"
+            >
+              <div class="society__icon">
+                <img
+                  src="img/sec3-cheer_icon_white.png"
+                  alt="cheer-up icon white"
+                />
+              </div>
+              <div class="society__text-box">
+                <h1 class="society__num">04</h1>
+                <h2 class="society__title">응원</h2>
+                <p class="society__desc">
+                  독도 사랑 캠페인<br />
+                  독립운동가 응원 캠페인
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 더보기 버튼 -->
+          <div class="view-more society__btn">
+            <button class="view-more__btn">
+              <span class="view-more__name">사회공헌활동 자세히보기</span>
+              <img src="img/green arrow.png" alt="green right arrow" />
+              <div class="view-more__value"></div>
+            </button>
+          </div>
+        </div>
+
+        <!-- custom cursor -->
+        <div class="cursor"></div>
+      </section>
+
+      <!-- section4 : BGF소식 -->
+      <section id="news">
+        <div class="sec__container news__container">
+          <!-- news left side -->
+          <div
+            class="news__left"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="1500"
+          >
+            <!-- news title -->
+            <div class="news__title-wrap">
+              <h1 class="news__big-title">BGF소식</h1>
+              <p class="news__desc">
+                편리한 생활을 창조하는 BGF리테일의 <br />
+                혁신과 변화에 대한 소식을 전해드립니다.
+              </p>
+
+              <!-- 더보기 버튼 -->
+              <div class="view-more news__view-more">
+                <button class="view-more__btn">
+                  <span class="view-more__name">BGF소식 더보기</span>
+                  <img src="img/green arrow.png" alt="green right arrow" />
+                  <div class="view-more__value"></div>
+                </button>
+              </div>
+            </div>
+
+            <!-- news item시작 -->
+            <div class="news__item">
+              <div class="news__img">
+                <img src="img/sec4-news1.png" alt="news 3L campagin" />
+              </div>
+              <div class="news__title-box">
+                <p class="news__title">
+                  가맹점주도 함께하는 ESG,<br />
+                  CU '친환경 3L 캠페인'시작!
+                </p>
+              </div>
+            </div>
+
+            <div class="news__item">
+              <div class="news__img">
+                <img src="img/sec4-news2.png" alt="삼각김밥 새로운 변화" />
+              </div>
+              <div class="news__title-box">
+                <div class="news__title">
+                  CU, 30년 된 편의점 한 끼<br />
+                  삼각김밥 세대교체 한다!
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- news right side -->
+          <div
+            class="news__right"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="1700"
+          >
+            <div class="news__item">
+              <div class="news__img">
+                <img src="img/sec4-news3.png" alt="화이트데이 프로모션" />
+              </div>
+              <div class="news__title-box">
+                <div class="news__title">
+                  CU, 화이트데이 역대 최다 <br />
+                  특급 콜라보 상품 쏟아진다!
+                </div>
+              </div>
+            </div>
+
+            <div class="news__item">
+              <div class="news__img">
+                <img src="img/sec4-news4.png" alt="삼일절 이벤트" />
+              </div>
+              <div class="news__title-box">
+                <div class="news__title">
+                  CU-대구은행, 삼일절 기념 <br />
+                  인스타그램 방탈출 이벤트 오픈
+                </div>
+              </div>
+            </div>
+
+            <div class="news__item">
+              <div class="news__img">
+                <img src="img/sec4-news5.png" alt="카카오톡 주문" />
+              </div>
+              <div class="news__title-box">
+                <div class="news__title">
+                  양대 포털까지 접수! <br />
+                  CU, 카카오톡 주문하기 입점
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- mobile ver swiper -->
+          <div class="swiper-container news-swiper-container">
+            <div class="swiper-wrapper news-swiper-wrapper">
+              <!-- slide 첫번째 -->
+              <div class="swiper-slide news-swiper-slide">
+                <div class="mo-news__img">
+                  <img src="img/sec4-news1.png" alt="news 3L campagin" />
+                </div>
+                <div class="mo-news__title-box">
+                  <p class="mo-news__title">
+                    가맹점주도 함께하는 ESG,<br />
+                    CU '친환경 3L 캠페인'시작!
+                  </p>
+                </div>
+              </div>
+              <!-- slide 두번째 -->
+              <div class="swiper-slide news-swiper-slide">
+                <div class="mo-news__img">
+                  <img src="img/sec4-news2.png" alt="삼각김밥 새로운 변화" />
+                </div>
+                <div class="mo-news__title-box">
+                  <div class="mo-news__title">
+                    CU, 30년 된 편의점 한 끼<br />
+                    삼각김밥 세대교체 한다!
+                  </div>
+                </div>
+              </div>
+              <!-- slide 세번째 -->
+              <div class="swiper-slide news-swiper-slide">
+                <div class="mo-news__img">
+                  <img src="img/sec4-news3.png" alt="화이트데이 프로모션" />
+                </div>
+                <div class="mo-news__title-box">
+                  <div class="mo-news__title">
+                    CU, 화이트데이 역대 최다 <br />
+                    특급 콜라보 상품 쏟아진다!
+                  </div>
+                </div>
+              </div>
+              <!-- slide 네번째 -->
+              <div class="swiper-slide news-swiper-slide">
+                <div class="mo-news__img">
+                  <img src="img/sec4-news4.png" alt="삼일절 이벤트" />
+                </div>
+                <div class="mo-news__title-box">
+                  <div class="mo-news__title">
+                    CU-대구은행, 삼일절 기념 <br />
+                    인스타그램 방탈출 이벤트 오픈
+                  </div>
+                </div>
+              </div>
+              <!-- slide 다섯번째 -->
+              <div class="swiper-slide news-swiper-slide">
+                <div class="mo-news__img">
+                  <img src="img/sec4-news5.png" alt="카카오톡 주문" />
+                </div>
+                <div class="mo-news__title-box">
+                  <div class="mo-news__title">
+                    양대 포털까지 접수! <br />
+                    CU, 카카오톡 주문하기 입점
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section5: 채용정보 -->
+      <section id="recruit">
+        <div class="recruit__title">
+          <h1 class="recuit__title">
+            <span class="title__white">미래지향적<br />유통전문가 육성,</span
+            ><br />
+            BGF리테일
+          </h1>
+        </div>
+        <div class="recruit__img">
+          <img
+            src="img/sec5-mobile-ver-img.png"
+            alt="mobile ver recruit img"
+            class="mobile-recruit__img"
+          />
+        </div>
+        <div class="recruit__text-box">
+          <p class="recruit__desc">
+            BGF리테일에서 따뜻한 마음과<br />열정을 가진 당신을 기다립니다.
+          </p>
+
+          <!-- 더보기 버튼 -->
+          <div class="view-more recruit__view-more">
+            <button class="view-more__btn">
+              <span class="view-more__name">채용정보 더보기</span>
+              <img src="img/green arrow.png" alt="green right arrow" />
+              <div class="view-more__value"></div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <div class="sec__container">
+          <!-- footer top부분 icons -->
+          <ul class="footer__icons">
+            <li class="footer__icon">
+              <img src="img/footer-stock icon.png" alt="투자정보 icon" />
+              <p class="footer__icon__name">투자정보</p>
+            </li>
+            <li class="footer__icon">
+              <img src="img/footer-family icon.png" alt="계열사 icon" />
+              <p class="footer__icon__name">계열사</p>
+            </li>
+            <li class="footer__icon">
+              <img src="img/footer-customer icon.png" alt="고객센터 icon" />
+              <p class="footer__icon__name">고객센터</p>
+            </li>
+          </ul>
+
+          <!-- footer bottom부분 -->
+          <div class="footer__bottom">
+            <div class="footer__individual">
+              <p>거래상담</p>
+              <p class="footer__bold">개인정보처리방침</p>
+            </div>
+            <div class="footer__management">
+              <p><b>윤리경영</b> | 온라인제보</p>
+              <p><b>공정거래</b> | 자율신고센터</p>
+              <p><b>창업안내</b> | 창업문의</p>
+            </div>
+            <p class="footer__copy">COPYRIGHT ⓒ BGFRetail ALL RIGHT RESERVED</p>
+          </div>
+        </div>
+      </footer>
+
+      <!--top btn-->
+    </div>
+  </body>
+</html>
