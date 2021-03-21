@@ -2,7 +2,8 @@
   /* 공통스타일 */
   :root {
     /* font-size */
-    --font-size-title: 40px;
+    --font-size-title: 
+    /* 40px; */ 6vw;
     --font-size-large: 24px;
     --font-size-mid: 20px;
     --font-size-regular: 16px;
