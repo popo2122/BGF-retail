@@ -1,4 +1,7 @@
 # BGF리테일 사이트 리뉴얼   
+### *💛 작업툴*
+- 와이어 프레이밍 및 디자인 : Photoshop, Illustrator, Adobe premire pro
+- Bracket, Visual Studio code, jQuery
 
 ### *💛 How to Design*
 - BGF리테일의 메인 색상인 '그린'을 기준으로 하여 내용을 강조할 수 있는 남색, 밝은 베이지색등을 함께 사용하여     
