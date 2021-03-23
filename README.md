@@ -13,7 +13,8 @@
 - header는 스크롤 다운 시 사라지고, 스크롤 업 시 나타나서 사용자가 좀 더 편하게 사이트를 사용할 수 있도록 jQuery로 구현
 - 버튼은 jQuery를 사용하여 hover시 자연스럽게 animate되도록 구현
 - 스크롤 시 배경 색상 자연스럽게 변경되도록 window scroll이벤트와 offset top값 사용
-- CSS와 jQuery사용하여 특정 섹션에서 마우스 모양 변경되도록 구현. (event clientX,Y값 사용)
+- CSS와 jQuery사용하여 특정 섹션에서 마우스 모양 변경되도록 구현.
+  - event객체의 clientX,Y값 사용하여 이벤트 발생 위치 파악
 - CSS background attachment속성 사용하여, 사용자가 스크롤 했을 때 이미지가 고정되어 스크롤 되도록 함.
 - 모바일의 이미지 슬라이드는 'Swiper' 라이브러리 활용
   - 참고 링크 : [Swiper](https://swiperjs.com/)
