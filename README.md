@@ -9,6 +9,7 @@
 
   
 ### *💛 Code*
+- PC~Mobile 반응형 지원 (pc는 1920＊1080에서 최적화)
 - 영상은 Adobe premiere pro를 사용하여 사이즈 편집, video로 마크업
 - header는 스크롤 다운 시 사라지고, 스크롤 업 시 나타나서 사용자가 좀 더 편하게 사이트를 사용할 수 있도록 jQuery로 구현
 - 버튼은 jQuery를 사용하여 hover시 자연스럽게 animate되도록 구현
