@@ -1,9 +1,10 @@
-# BGF리테일 사이트 리뉴얼   
-### *💛 작업툴*
+# BGF리테일 사이트 리뉴얼      
+      
+## *💛작업툴*
 - 와이어 프레이밍 및 디자인 : Photoshop, Illustrator, Adobe premire pro
 - Bracket, Visual Studio code, jQuery
 
-### *💛 How to Design*
+## *💛 How to Design*
 - BGF리테일의 메인 색상인 '그린'을 기준으로 하여 내용을 강조할 수 있는 남색, 밝은 베이지색등을 함께 사용하여     
   전체적으로 브랜드가 가지고 있는 이미지와 아이덴티티를 강조하고자 함
 - 사용자가 한 눈에 기업의 사회공헌 내용을 인지할 수 있도록, 아이콘과 짧은 글귀를 사용하여 페이지 디자인
@@ -11,7 +12,7 @@
 - 전체적으로 사용자가 간결하게 기업이 어떤 일을 하고 있는지에 대해 인지할 수 있도록 심플한 디자인을 하고자 함   
 
   
-### *💛 Code*
+## *💛 Code*
 - PC~Mobile 반응형 지원 (pc는 1920＊1080에서 최적화)
 - 영상은 Adobe premiere pro를 사용하여 사이즈 편집, video로 마크업
 - header는 스크롤 다운 시 사라지고, 스크롤 업 시 나타나서 사용자가 좀 더 편하게 사이트를 사용할 수 있도록 jQuery로 구현
@@ -26,9 +27,9 @@
   - 참고 링크 : [AOS](https://michalsnik.github.io/aos/)
 
 
-### 💛 PC ver. 디자인
+## 💛 PC ver. 디자인
 <p align="center"><img src="https://user-images.githubusercontent.com/75009488/111439754-07505680-8749-11eb-89e0-0645b4eb190b.jpg" width="50%" height="50%"/></p>          
         
         
-### 💛 Mobile ver. 디자인
+## 💛 Mobile ver. 디자인
 <p align="center"><img src="https://user-images.githubusercontent.com/75009488/111439764-0a4b4700-8749-11eb-9009-c7045f011217.jpg" width="50%" height="50%"/></p>
