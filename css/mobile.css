@@ -390,20 +390,20 @@
     }
 
     .society__icon {
-        width: 50%;
+        width: 40%;
         height: 100%;
         /* margin-bottom: 20px; */
     }
 
     .society__icon > img {
-        width: 180px;
-        height: 180px;
-        margin: 0 auto;
+        width: 140px;
+        height: 140px;
+        margin: 0 auto 20px auto;
     }
 
     .society__text-box {
         margin-top: 15px;
-        width: 50%;
+        width: 60%;
         height: 100%;
         color: var(--color-mid-white);
         /* background-color: lightsalmon; */
@@ -424,7 +424,7 @@
         width: 100%;
         height: 100px;
         /* height: 150px; */
-        line-height: 20px;
+        line-height: 25px;
         font-size: var(--font-size-micro);
     }
 
@@ -482,7 +482,7 @@
     .mo-news__img > img {
         width: 100%;
     }
-    
+
 
     .mo-news__title {
         display: none;
